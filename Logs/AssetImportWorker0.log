@@ -179,3 +179,4 @@ Received Import Request.
 Start importing Assets/UnityTechnologies/StarterAsset/Animation/SugarLand using Guid(e9eba39cf355ce342b007d77564788dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b722a025189d0556f076a8b2b3f44a5a') in 0.000783 seconds 
   Import took 0.003925 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
