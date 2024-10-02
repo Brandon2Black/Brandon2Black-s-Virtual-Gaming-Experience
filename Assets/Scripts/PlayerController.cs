@@ -8,14 +8,18 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        
+        Vector2 position = transform.position;
+        position.x = position.x - 0.01f;
+        position.y = position.y + 0.01f;
+        transform.position = position;
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector2 position = transform.position;
-        position.x = position.x + 0.1f;
+        position.x = position.x - 0.01f;
+        position.y = position.y + 0.01f;
         transform.position = position;
     }
 }
