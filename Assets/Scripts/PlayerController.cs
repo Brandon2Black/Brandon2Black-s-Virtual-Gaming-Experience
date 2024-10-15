@@ -38,8 +38,8 @@ public class PlayerController : MonoBehaviour
          Debug.Log(vertical);
         //handling said plr movement stuf.
         Vector2 position = transform.position;
-        position.x = position.x + 0.05f * horizontal;
-        position.y = position.y + 0.05f * vertical;
+        position.x = position.x + 0.04f * horizontal;
+        position.y = position.y + 0.04f * vertical;
         transform.position = position;
         
     }
