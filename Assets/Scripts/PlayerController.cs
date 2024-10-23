@@ -5,42 +5,30 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public InputAction leftAction;
+    public InputAction moveAction;
     // Start is called before the first frame update
 
     void Start()
     {
+     leftAction.Enable();
+     moveAction.Enable();
 
+     //QualitySettings.vSyncCount = 0;
+     //Application.targetFrameRate = 120;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //creating var to do plr movement stuf.
-        float horizontal = 0.0f;
-        float vertical = 0.0f;
-        if(Keyboard.current.leftArrowKey.isPressed)
-        {
-          horizontal = -1.0f;
-        }
-     else if(Keyboard.current.rightArrowKey.isPressed)
-        {
-          horizontal = 1.0f;
-        }
-         if(Keyboard.current.upArrowKey.isPressed)
-        {
-          vertical = 1.0f;
-        }
-     else if(Keyboard.current.downArrowKey.isPressed)
-        {
-          vertical = -1.0f;
-        }
-         Debug.Log(horizontal);
-         Debug.Log(vertical);
+      //Stores vector 2 value for movement.
+        Vector2 move = moveAction.ReadValue<Vector2>();
+        //display in console
+        Debug.Log(move);
         //handling said plr movement stuf.
-        Vector2 position = transform.position;
-        position.x = position.x + 0.04f * horizontal;
-        position.y = position.y + 0.04f * vertical;
+        Vector2 position = (Vector2)transform.position + move * 5.0f * Time.deltaTime;
         transform.position = position;
-        
+        //position.x = position.x + 0.04f * horizontal;
+        //position.y = position.y + 0.04f * vertical;
     }
 }
