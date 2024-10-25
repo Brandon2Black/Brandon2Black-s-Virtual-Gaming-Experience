@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
         //display in console
         Debug.Log(move);
         //handling said plr movement stuf.
-        Vector2 position = (Vector2)transform.position + move * 5.0f * Time.deltaTime;
+        Vector2 position = (Vector2)transform.position + move * 7.0f * Time.deltaTime;
         transform.position = position;
         //position.x = position.x + 0.04f * horizontal;
         //position.y = position.y + 0.04f * vertical;
