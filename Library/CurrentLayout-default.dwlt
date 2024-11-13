@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1666
     height: 1232
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 746, y: 492}
   m_MaxSize: {x: 18001, y: 14042}
   vertical: 0
-  controlID: 900
+  controlID: 1045
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 471, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
-  controlID: 901
+  controlID: 1046
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 902
+  controlID: 1047
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_MinSize: {x: 471, y: 271}
   m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
-  controlID: 950
+  controlID: 1129
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -478,9 +478,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.06937243, y: 0.33708212, z: -18.440893}
+    m_Target: {x: -0.45055994, y: 1.3770311, z: -18.576506}
     speed: 2
-    m_Value: {x: 0.06937243, y: 0.33708212, z: -18.440893}
+    m_Value: {x: -0.45055994, y: 1.3770311, z: -18.576506}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -650,22 +650,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/UnityTechnologies/StarterAsset/Art/Ducko/Environmnent
+    - Assets/UnityTechnologies/StarterAsset/Art/Tiles
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets/UnityTechnologies/StarterAsset/Art/Ducko/Environmnent
+  - Assets/UnityTechnologies/StarterAsset/Art/Tiles
   m_LastFoldersGridSize: 57
   m_LastProjectPath: /Users/game12/Brandon2Black's Virtual Gaming Experience
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 74}
-    m_SelectedIDs: 2a480000
-    m_LastClickedID: 18474
-    m_ExpandedIDs: 0000000016480000284800002c4800002e4800003048000000ca9a3b
+    scrollPos: {x: 0, y: 10}
+    m_SelectedIDs: 42480000
+    m_LastClickedID: 18498
+    m_ExpandedIDs: 00000000164800002c480000324800003448000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -745,7 +745,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 492}
     m_GridSize: 57
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207

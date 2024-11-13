@@ -7,8 +7,11 @@ public class PlayerController : MonoBehaviour
 {
     public InputAction leftAction;
     public InputAction moveAction;
+    public int maxHealth = 5; //Creats integer "maxHealth" and sets it equal to 5.
+    int currentHealth;
     Rigidbody2D rigidbody2d;
     Vector2 move;
+    public float speed = 7.0f;
     // Start is called before the first frame update
 
     void Start()
@@ -16,7 +19,7 @@ public class PlayerController : MonoBehaviour
      leftAction.Enable();
      moveAction.Enable();
      rigidbody2d = GetComponent<Rigidbody2D>();
-
+     currentHealth = maxHealth;
      //QualitySettings.vSyncCount = 0;
      //Application.targetFrameRate = 120;
     }
@@ -28,16 +31,18 @@ public class PlayerController : MonoBehaviour
        move = moveAction.ReadValue<Vector2>();
         //display in console
         Debug.Log(move);
-        //handling said plr movement stuf.
-        //Vector2 position = (Vector2)transform.position + move * 7.0f * Time.deltaTime;
-        //transform.position = position;
-        //position.x = position.x + 0.04f * horizontal;
-        //position.y = position.y + 0.04f * vertical;
     }
 
     void FixedUpdate()
    {
-       Vector2 position = (Vector2)rigidbody2d.position + move * 7.0f * Time.deltaTime;
+       Vector2 position = (Vector2)rigidbody2d.position + move * speed * Time.deltaTime;
        rigidbody2d.MovePosition(position);
+   }
+
+   void ChangeHealth (int amount)
+   {
+    currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+    Debug.Log(currentHealth + "/" + maxHealth);
+
    }
 }
