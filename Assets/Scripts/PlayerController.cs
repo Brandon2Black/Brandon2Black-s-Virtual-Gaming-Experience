@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
       //Stores vector 2 value for movement.
        move = moveAction.ReadValue<Vector2>();
         //display in console
-        Debug.Log(move);
+        //Debug.Log(move);
     }
 
     void FixedUpdate()
@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
        rigidbody2d.MovePosition(position);
    }
 
-   void ChangeHealth (int amount)
+   public void ChangeHealth (int amount)
    {
     currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
     Debug.Log(currentHealth + "/" + maxHealth);
