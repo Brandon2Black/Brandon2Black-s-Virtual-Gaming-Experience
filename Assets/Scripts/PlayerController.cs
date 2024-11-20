@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     public InputAction moveAction;
     public int maxHealth = 5; //Creats integer "maxHealth" and sets it equal to 5.
     int currentHealth;
+
+   public int health { get { return currentHealth; }}
+
     Rigidbody2D rigidbody2d;
     Vector2 move;
     public float speed = 7.0f;
@@ -43,6 +46,5 @@ public class PlayerController : MonoBehaviour
    {
     currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
     Debug.Log(currentHealth + "/" + maxHealth);
-
    }
 }
