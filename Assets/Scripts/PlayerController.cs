@@ -8,8 +8,10 @@ public class PlayerController : MonoBehaviour
     public InputAction leftAction;
     public InputAction moveAction;
     public int maxHealth = 5; //Creats integer "maxHealth" and sets it equal to 5.
-    int currentHealth;
-
+    public int currentHealth;
+   public float timeInvincible = 2.0f;
+    bool isInvincible;
+    float damageCooldown;
    public int health { get { return currentHealth; }}
 
     Rigidbody2D rigidbody2d;
@@ -34,6 +36,14 @@ public class PlayerController : MonoBehaviour
        move = moveAction.ReadValue<Vector2>();
         //display in console
         //Debug.Log(move);
+        if (isInvincible)
+{
+    damageCooldown -= Time.deltaTime; // subtract from current time
+    if (damageCooldown < 0)
+    {
+       isInvincible = false;
+    }
+}
     }
 
     void FixedUpdate()
@@ -44,6 +54,15 @@ public class PlayerController : MonoBehaviour
 
    public void ChangeHealth (int amount)
    {
+    if (amount < 0)
+{
+   if (isInvincible)
+   {
+     return;
+   }
+   isInvincible = true;
+   damageCooldown = timeInvincible;
+}
     currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
     Debug.Log(currentHealth + "/" + maxHealth);
    }
