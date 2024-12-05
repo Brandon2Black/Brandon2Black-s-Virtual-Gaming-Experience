@@ -9,10 +9,10 @@ public class PlayerController : MonoBehaviour
     public InputAction moveAction;
     public int maxHealth = 5; //Creats integer "maxHealth" and sets it equal to 5.
     public int currentHealth;
-   public float timeInvincible = 2.0f;
+    public float timeInvincible = 2.0f;
     bool isInvincible;
     float damageCooldown;
-   public int health { get { return currentHealth; }}
+    public int health { get { return currentHealth; }}
 
     Rigidbody2D rigidbody2d;
     Vector2 move;
@@ -54,16 +54,17 @@ public class PlayerController : MonoBehaviour
 
    public void ChangeHealth (int amount)
    {
-    if (amount < 0)
-{
-   if (isInvincible)
-   {
-     return;
-   }
-   isInvincible = true;
-   damageCooldown = timeInvincible;
-}
-    currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-    Debug.Log(currentHealth + "/" + maxHealth);
+        if (amount < 0)
+        {
+            if (isInvincible)
+            {
+                return;
+            }
+            isInvincible = true;
+            damageCooldown = timeInvincible;
+        }
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
    }
 }
