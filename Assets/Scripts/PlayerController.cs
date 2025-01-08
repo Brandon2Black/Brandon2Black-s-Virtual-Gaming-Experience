@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D rigidbody2d;
     Vector2 move;
+    Animator animator;
+    Vector2 moveDirection = new Vector2(1,0);
     public float speed = 7.0f;
     // Start is called before the first frame update
 
@@ -24,14 +26,26 @@ public class PlayerController : MonoBehaviour
      leftAction.Enable();
      moveAction.Enable();
      rigidbody2d = GetComponent<Rigidbody2D>();
+     animator = GetComponent<Animator>();
      currentHealth = maxHealth;
      //QualitySettings.vSyncCount = 0;
      //Application.targetFrameRate = 120;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+ void Update()
+  {
+     if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y,0.0f))
+     {
+        moveDirection.Set(move.x, move.y);
+        moveDirection.Normalize();
+     }
+
+     animator.SetFloat("Look X", moveDirection.x);
+     animator.SetFloat("Look Y", moveDirection.y);
+     animator.SetFloat("Speed", move.magnitude);
+
+  
       //Stores vector 2 value for movement.
        move = moveAction.ReadValue<Vector2>();
         //display in console
@@ -62,6 +76,7 @@ public class PlayerController : MonoBehaviour
             }
             isInvincible = true;
             damageCooldown = timeInvincible;
+            animator.SetTrigger("Hit");
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
