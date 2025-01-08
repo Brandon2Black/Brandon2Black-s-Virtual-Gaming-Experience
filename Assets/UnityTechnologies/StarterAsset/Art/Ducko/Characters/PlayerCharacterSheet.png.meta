@@ -3,7 +3,7 @@ guid: d2a0ff0a7a0b76349865662d016981be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,12 +20,10 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -48,7 +46,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -64,8 +62,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
-  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -77,20 +73,18 @@ TextureImporter:
     crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -103,7 +97,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -833,43 +826,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      DuckoSheet_0: 1442360895
-      DuckoSheet_1: 976706863
-      DuckoSheet_10: -1778919119
-      DuckoSheet_11: -520209124
-      DuckoSheet_12: 527932069
-      DuckoSheet_13: -1594450653
-      DuckoSheet_14: 454275821
-      DuckoSheet_15: 638111577
-      DuckoSheet_16: 2131705948
-      DuckoSheet_17: 1464151854
-      DuckoSheet_18: 587219134
-      DuckoSheet_19: -956532526
-      DuckoSheet_2: -1589862634
-      DuckoSheet_20: 1694984486
-      DuckoSheet_21: 339654822
-      DuckoSheet_22: -624105008
-      DuckoSheet_23: 1425454237
-      DuckoSheet_24: -847497012
-      DuckoSheet_25: 1402785502
-      DuckoSheet_26: -1728995131
-      DuckoSheet_27: -555793286
-      DuckoSheet_28: 1973821942
-      DuckoSheet_29: 1812551475
-      DuckoSheet_3: 1591499144
-      DuckoSheet_30: 453022491
-      DuckoSheet_31: -416249586
-      DuckoSheet_32: -433247889
-      DuckoSheet_33: 1181794579
-      DuckoSheet_4: 1073202592
-      DuckoSheet_5: 1760751149
-      DuckoSheet_6: -795413968
-      DuckoSheet_7: 1094869957
-      DuckoSheet_8: -1309261130
-      DuckoSheet_9: 595375070
-  mipmapLimitGroupName: 
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
