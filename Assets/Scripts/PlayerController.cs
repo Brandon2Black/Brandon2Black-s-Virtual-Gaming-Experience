@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     bool isInvincible;
     float damageCooldown;
     public int health { get { return currentHealth; }}
+    public GameObject projectilePrefab;
 
     Rigidbody2D rigidbody2d;
     Vector2 move;
@@ -58,6 +59,10 @@ public class PlayerController : MonoBehaviour
        isInvincible = false;
     }
 }
+     if(Input.GetKeyDown(KeyCode.C))
+       {
+          Launch();
+       }
     }
 
     void FixedUpdate()
@@ -82,4 +87,12 @@ public class PlayerController : MonoBehaviour
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
    }
+
+void Launch()
+  {
+    GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+    Projectile projectile = projectileObject.GetComponent<Projectile>();
+    projectile.Launch(moveDirection, 300);
+    animator.SetTrigger("Launch");
+  }
 }
