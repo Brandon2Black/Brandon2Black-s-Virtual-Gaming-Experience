@@ -16,7 +16,10 @@ public class Projectile : MonoBehaviour
 
    void Update()
    {
-     
+     if(transform.position.magnitude > 100.0f)
+       {
+           Destroy(gameObject);
+       }
    }
 
 
@@ -27,9 +30,16 @@ public class Projectile : MonoBehaviour
 
    void OnTriggerEnter2D(Collider2D other)
   {
-       Debug.Log("Projectile collision with " + other.gameObject);
+       EnemyController enemy = other.GetComponent<EnemyController>();
+       if (enemy != null)
+           {
+               enemy.Fix();
+           }
         Destroy(gameObject);
   }
-
+ void OnCollisionEnter2D(Collision2D other)
+  {
+     Destroy(gameObject);
+  }
 
 }
