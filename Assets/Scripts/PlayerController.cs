@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public InputAction leftAction;
     public InputAction moveAction;
+    public InputAction talkAction;
     public int maxHealth = 5; //Creats integer "maxHealth" and sets it equal to 5.
     public int currentHealth;
     public float timeInvincible = 2.0f;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
      leftAction.Enable();
      moveAction.Enable();
+     talkAction.Enable();
      rigidbody2d = GetComponent<Rigidbody2D>();
      animator = GetComponent<Animator>();
      currentHealth = maxHealth;
@@ -36,6 +38,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
  void Update()
   {
+
+    if (Input.GetKeyDown(KeyCode.Return) || (Input.GetKeyDown(KeyCode.X)) )
+        {
+           FindFriend();
+        }
+        
      if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y,0.0f))
      {
         moveDirection.Set(move.x, move.y);
@@ -63,6 +71,8 @@ public class PlayerController : MonoBehaviour
        {
           Launch();
        }
+
+
     }
 
     void FixedUpdate()
@@ -95,4 +105,15 @@ void Launch()
     projectile.Launch(moveDirection, 300);
     animator.SetTrigger("Launch");
   }
+
+  void FindFriend()
+{
+RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f,  moveDirection, 1.5f, LayerMask.GetMask("NPC"));
+
+if (hit.collider != null)
+{
+     Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
+}
+
+}
 }

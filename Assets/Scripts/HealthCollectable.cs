@@ -5,7 +5,6 @@ using UnityEngine;
 public class HealthCollectable : MonoBehaviour
 {
  
-   
 
    void OnTriggerEnter2D(Collider2D other)
    {
