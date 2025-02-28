@@ -54,8 +54,6 @@ MonoBehaviour:
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-local-styles-foldout__builder-inspector-style-section-foldout-border__builder-inspector-style-section-foldout-border-width__Unity.UI.Builder.FoldoutNumberField
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-local-styles-foldout__builder-inspector-style-section-foldout-border__builder-inspector-style-section-foldout-border-radius__Unity.UI.Builder.FoldoutNumberField
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-local-styles-foldout__builder-inspector-style-section-foldout-cursor__Unity.UI.Builder.PersistedFoldout
-  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__0__Unity.UI.Builder.PersistedFoldout
-  - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__unity-ui-builder-inspector__builder-inspector-attributes-inherited-styles-foldout__builder-inspector-matching-selectors-container-foldout__builder-inspector-rule-foldout__1__Unity.UI.Builder.PersistedFoldout
   m_Values:
   - '{"m_FixedPaneDimension":300.0}'
   - '{"m_FixedPaneDimension":450.0}'
@@ -65,7 +63,7 @@ MonoBehaviour:
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_ElementInfoVisibilityState":0}'
-  - '{"m_ExpandedItemIds":[1,-1389980776,-1653197919,-953497788,1910149276,2,-1041582899,-1729287190,1484551358,1097719665,-80371622,499795343,677707724,1633686814]}'
+  - '{"m_ExpandedItemIds":[1,-1389980776,-1653197919,-953497788,1910149276,2,-1041582899,-1729287190,1484551358,1097719665,-80371622,499795343,677707724,1633686814,-2102845662,-621717347]}'
   - '{"m_ScrollOffset":0.0,"m_ShowAlternatingRowBackgrounds":0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
@@ -77,10 +75,10 @@ MonoBehaviour:
   - '{"m_FixedPaneDimension":300.0}'
   - '{"m_FixedPaneDimension":20.0}'
   - '{"m_FixedPaneDimension":200.0}'
-  - '{"m_CachedScrollPositionCount":5,"m_OldestScrollPositionIndex":4,"m_CachedContentHeights":[1283.0,1499.0,1403.0,1752.0,1392.0],"m_CachedScrollPositions":[{"scrollPosition":590.0,"maxScrollValue":590.0},{"scrollPosition":806.0,"maxScrollValue":806.0},{"scrollPosition":710.0,"maxScrollValue":710.0},{"scrollPosition":1059.0,"maxScrollValue":1059.0},{"scrollPosition":0.0,"maxScrollValue":699.0}]}'
+  - '{"m_CachedScrollPositionCount":5,"m_OldestScrollPositionIndex":3,"m_CachedContentHeights":[1992.0,2030.0,1898.0,1752.0,1884.0],"m_CachedScrollPositions":[{"scrollPosition":82.8050537109375,"maxScrollValue":1299.0},{"scrollPosition":1337.0,"maxScrollValue":1337.0},{"scrollPosition":1205.0,"maxScrollValue":1205.0},{"scrollPosition":1059.0,"maxScrollValue":1059.0},{"scrollPosition":0.0,"maxScrollValue":1191.0}]}'
   - '{"m_Value":true}'
-  - '{"m_Value":false}'
-  - '{"m_Value":false}'
+  - '{"m_Value":true}'
+  - '{"m_Value":true}'
   - '{"m_Value":true}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
@@ -94,9 +92,7 @@ MonoBehaviour:
   - '{"m_Value":true}'
   - '{"m_Value":false,"fieldValues":[]}'
   - '{"m_Value":true}'
-  - '{"m_Value":true,"fieldValues":[{"r":0.09977637231349945,"g":0.0,"b":0.38679248094558718,"a":255.0},{"r":0.09977637231349945,"g":0.0,"b":0.38679248094558718,"a":255.0},{"r":0.09977637231349945,"g":0.0,"b":0.38679248094558718,"a":255.0},{"r":0.09977637231349945,"g":0.0,"b":0.38679248094558718,"a":255.0}]}'
+  - '{"m_Value":true,"fieldValues":[{"r":0.0,"g":0.0,"b":0.0,"a":255.0},{"r":0.0,"g":0.0,"b":0.0,"a":255.0},{"r":0.0,"g":0.0,"b":0.0,"a":255.0},{"r":0.0,"g":0.0,"b":0.0,"a":255.0}]}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":true}'
-  - '{"m_Value":false}'
-  - '{"m_Value":false}'
