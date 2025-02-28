@@ -3,13 +3,13 @@
     "UxmlPath": "Assets/NPCDialogue.uxml",
     "CanvasX": 0,
     "CanvasY": 0,
-    "CanvasWidth": 350,
-    "CanvasHeight": 450,
+    "CanvasWidth": 351,
+    "CanvasHeight": 762,
     "MatchGameView": false,
-    "ZoomScale": 1.0,
+    "ZoomScale": 0.25,
     "PanOffset": {
-        "x": 300.0,
-        "y": 97.0
+        "x": 558.875,
+        "y": 302.5
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,
