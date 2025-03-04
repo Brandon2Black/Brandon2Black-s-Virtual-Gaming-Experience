@@ -11,6 +11,7 @@ public class UIHandler : MonoBehaviour
    // UI dialogue window variables
    public float displayTime = 4.0f;
    private VisualElement m_NonPlayerDialogue;
+   Label m_DialogueText;
    private float m_TimerDisplay;
 
 
@@ -28,9 +29,13 @@ public class UIHandler : MonoBehaviour
 
 
        m_NonPlayerDialogue = uiDocument.rootVisualElement.Q<VisualElement>("NPCDialogue");
+       m_DialogueText = m_NonPlayerDialogue.Q<VisualElement>("Background").Q<Label>("Label");
+       if (m_DialogueText == null)
+       {
+        Debug.Log("Could not find :(");
+       }
        m_NonPlayerDialogue.style.display = DisplayStyle.None;
        m_TimerDisplay = -1.0f;
-
 
    }
 
@@ -49,8 +54,14 @@ public class UIHandler : MonoBehaviour
    }
 
    
-   public void DisplayDialogue()
+   public void DisplayDialogue(string message)
    {
+
+      if (m_NonPlayerDialogue != null)
+      {
+         m_DialogueText.text = message;  
+      }
+
    m_NonPlayerDialogue.style.display = DisplayStyle.Flex;
    m_TimerDisplay = displayTime;
    }

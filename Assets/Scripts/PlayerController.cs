@@ -117,7 +117,7 @@ if (hit.collider != null)
 
    if (character != null)
    {
-       UIHandler.instance.DisplayDialogue();
+       UIHandler.instance.DisplayDialogue(character.npcDialogue);
    }
 }
 
