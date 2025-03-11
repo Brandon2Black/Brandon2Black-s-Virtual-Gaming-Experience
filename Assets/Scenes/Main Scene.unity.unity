@@ -14213,16 +14213,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 20, y: 8, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -19, y: 9, z: 0}
     second:
       serializedVersion: 2
@@ -14604,16 +14594,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 19, y: 9, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 20, y: 9, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -16971,7 +16951,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 6ffd58b69dd7042da80a4cc12e732dca, type: 2}
   - m_RefCount: 196
     m_Data: {fileID: 11400000, guid: 04ae62fba5ede428fa9f4ff93c26e5f7, type: 2}
-  - m_RefCount: 637
+  - m_RefCount: 635
     m_Data: {fileID: 11400000, guid: 1ef5564a561474f909dd8fbd5b27be1d, type: 2}
   - m_RefCount: 156
     m_Data: {fileID: 11400000, guid: 5cedf49aca6504853ac34c61628f1361, type: 2}
@@ -17064,7 +17044,7 @@ Tilemap:
   - m_RefCount: 91
     m_Data: {fileID: 11400000, guid: 083c9c9a7dfc94989b34f23bcf112eeb, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 637
+  - m_RefCount: 635
     m_Data: {fileID: 21300000, guid: 8ad785d38ebea72418c0b25a9ca7be7d, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -17163,7 +17143,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -8167701438036380033, guid: 10a2192d7bdab0d44bbe1cf182ec81ef, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1289
+  - m_RefCount: 1287
     m_Data:
       e00: 1
       e01: 0
@@ -17182,7 +17162,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1289
+  - m_RefCount: 1287
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 0.962472, g: 0.5866383, b: 0.60609865, a: 1}
@@ -17250,13 +17230,13 @@ CompositeCollider2D:
         Y: -170000041
       - X: 200000100
         Y: 79999900
-      - X: 210000041
+      - X: 199999959
         Y: 79999900
-      - X: 210000100
+      - X: 199999900
         Y: 79999959
-      - X: 210000100
+      - X: 199999900
         Y: 100000041
-      - X: 210000041
+      - X: 199999959
         Y: 100000100
       - X: 200000100
         Y: 100000100
@@ -17455,10 +17435,6 @@ CompositeCollider2D:
   m_CompositePaths:
     m_Paths:
     - - {x: 19.999975, y: -17.00001}
-      - {x: 20.00004, y: 7.9999905}
-      - {x: 21.00001, y: 8.000026}
-      - {x: 20.999975, y: 10.00001}
-      - {x: 20.00001, y: 10.000039}
       - {x: 19.999975, y: 12.00001}
       - {x: 15.99999, y: 11.999974}
       - {x: 15.99996, y: 9.00001}
