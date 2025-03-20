@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Vector2 moveDirection = new Vector2(1,0);
     public float speed = 7.0f;
+
+    AudioSource audioSource;
     // Start is called before the first frame update
 
     void Start()
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour
      rigidbody2d = GetComponent<Rigidbody2D>();
      animator = GetComponent<Animator>();
      currentHealth = maxHealth;
+     audioSource = GetComponent<AudioSource>();
      //QualitySettings.vSyncCount = 0;
      //Application.targetFrameRate = 120;
     }
@@ -80,6 +83,12 @@ public class PlayerController : MonoBehaviour
        Vector2 position = (Vector2)rigidbody2d.position + move * speed * Time.deltaTime;
        rigidbody2d.MovePosition(position);
    }
+
+
+   public void PlaySound(AudioClip clip)
+  {
+     audioSource.PlayOneShot(clip);
+  }
 
    public void ChangeHealth (int amount)
    {
