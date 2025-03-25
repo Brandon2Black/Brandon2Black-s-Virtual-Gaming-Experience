@@ -3854,9 +3854,10 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0.20965528, y: 12.216589}
       - {x: -18.981462, y: 12.049746}
-      - {x: -19.194744, y: -16.952518}
-      - {x: 0.19974041, y: -16.69045}
-      - {x: 19.980955, y: -16.638037}
+      - {x: -19.02457, y: -7.1835747}
+      - {x: -18.863306, y: -13.223822}
+      - {x: -1.4988883, y: -13.666063}
+      - {x: 20.063818, y: -14.06938}
       - {x: 19.97733, y: 12.311816}
 --- !u!4 &1299929849
 Transform:
@@ -4558,6 +4559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a6768cb55574517813b1d067d7967e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageSound: {fileID: 8300000, guid: c7d3a91ac32abbe47a8931a8ffc37bc6, type: 3}
 --- !u!1 &1527699356
 GameObject:
   m_ObjectHideFlags: 3
