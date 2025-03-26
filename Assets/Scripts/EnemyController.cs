@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour
    int direction = 1;
    bool broken = true;
 
+   
+
    // Start is called before the first frame update
    void Start()
    {

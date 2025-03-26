@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+  public AudioClip DamageSound;
+
     public InputAction leftAction;
     public InputAction moveAction;
     public InputAction talkAction;
@@ -92,12 +94,14 @@ public class PlayerController : MonoBehaviour
 
    public void ChangeHealth (int amount)
    {
+      
         if (amount < 0)
         {
             if (isInvincible)
             {
                 return;
             }
+            PlaySound(DamageSound);
             isInvincible = true;
             damageCooldown = timeInvincible;
             animator.SetTrigger("Hit");

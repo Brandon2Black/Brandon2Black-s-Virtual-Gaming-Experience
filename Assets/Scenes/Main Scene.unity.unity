@@ -3095,6 +3095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9aeff51dcd514cf6a84e52a3e85571a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DamageSound: {fileID: 8300000, guid: c7d3a91ac32abbe47a8931a8ffc37bc6, type: 3}
   leftAction:
     m_Name: Left
     m_Type: 1

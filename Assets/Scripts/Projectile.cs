@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+
    Rigidbody2D rigidbody2d;
 
 
@@ -26,6 +27,7 @@ public class Projectile : MonoBehaviour
    public void Launch(Vector2 direction, float force)
   {
        rigidbody2d.AddForce(direction * force);
+   
   }
 
    void OnTriggerEnter2D(Collider2D other)

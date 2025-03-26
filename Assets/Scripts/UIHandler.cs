@@ -24,6 +24,7 @@ public class UIHandler : MonoBehaviour
    // Start is called before the first frame update
    private void Start()
    {
+    
        UIDocument uiDocument = GetComponent<UIDocument>();
 
        m_NonPlayerDialogue = uiDocument.rootVisualElement.Q<VisualElement>("NPCDialogue");

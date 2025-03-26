@@ -11,7 +11,7 @@ public class DamageZone : MonoBehaviour
     if (controller != null && controller.health > 0)
     {
       controller.ChangeHealth(-1);
-      controller.PlaySound(DamageSound);
+     // controller.PlaySound(DamageSound);
       //Destroy(gameObject);
     }
 
