@@ -25,7 +25,7 @@ public class UIHandler : MonoBehaviour
    private void Start()
    {
 
-       UIDocument uiDocument = GetComponent<UIDocument>();
+       UIDocument uiDocument = GetComponent<UIDocument>(); 
 
        m_NonPlayerDialogue = uiDocument.rootVisualElement.Q<VisualElement>("NPCDialogue");
        m_DialogueText = m_NonPlayerDialogue.Q<VisualElement>("Background").Q<Label>("Label");
