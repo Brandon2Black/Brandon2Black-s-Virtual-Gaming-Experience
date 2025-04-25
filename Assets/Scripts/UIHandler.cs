@@ -25,7 +25,6 @@ public class UIHandler : MonoBehaviour
    private void Start()
    {
 
-
        UIDocument uiDocument = GetComponent<UIDocument>(); 
 
        m_NonPlayerDialogue = uiDocument.rootVisualElement.Q<VisualElement>("NPCDialogue");
